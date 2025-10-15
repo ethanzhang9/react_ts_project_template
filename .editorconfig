@@ -1,0 +1,13 @@
+root = true  # 这是根级 .editorconfig 文件，不再向上查找其他配置
+
+[*] # 表示所有文件适用
+charset = utf-8  # 文件编码为 UTF-8
+indent_style = space  # 使用空格进行缩进（tab | space）
+indent_size = 2  # 每级缩进 2 个空格
+end_of_line = lf  # 使用 LF（Unix 风格）换行符（lf | cr | crlf）
+trim_trailing_whitespace = true  # 自动删除行尾多余空格
+insert_final_newline = true  # 文件末尾自动插入一个空行
+
+[*.md] # 表示仅对 md 文件适用以下规则
+max_line_length = off  # 不限制 Markdown 文件的行宽
+trim_trailing_whitespace = false  # 保留行尾空格（用于 Markdown 手动换行）
