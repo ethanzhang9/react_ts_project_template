@@ -4,7 +4,8 @@ import counterReducer from "./modules/counter";
 const store = configureStore({
   reducer: {
     counter: counterReducer
-  }
+  },
+  devTools: process.env.NODE_ENV !== "production" // 仅在开发环境开启
 });
 
 // 从 store 本身推断 state 和 dispatch 的类型
